@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pet Gallery Enhanced</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <h1>🐾 Pet Gallery Slider</h1>
+  <button id="toggleMode">🌗 Toggle Theme</button>
+  <div class="gallery" id="gallery"></div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <button class="nav prev" onclick="changeImage(-1)">❮</button>
+    <img class="modal-content" id="modalImg" />
+    <button class="nav next" onclick="changeImage(1)">❯</button>
+    <div id="caption"></div>
+    <div class="thumbnail-bar" id="thumbnails"></div>
+    <div class="controls">
+      <button onclick="toggleSlideshow()">⏯ Pause/Play</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
